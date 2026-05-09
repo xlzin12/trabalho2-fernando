@@ -1,0 +1,220 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #141414; 
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #000000;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu .logo {
+    color: #e50914; 
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.menu a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #b3b3b3;
+}
+
+
+main {
+    flex: 1;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+
+.vitrine {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+
+.card-filme {
+    background-color: #2f2f2f;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-filme:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+.capa-filme {
+    width: 100%;
+    height: 330px;
+    object-fit: cover; 
+}
+
+.info-filme {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.info-filme h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.info-filme p {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-bottom: 5px;
+}
+
+.info-filme strong {
+    color: #ffffff;
+}
+
+.btn-excluir,.btn-editar  {
+    display: block;
+    margin: 15px;
+    text-align: center;
+    background-color: #e50914;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: auto; /* Empurra o botão pro final do card */
+    font-weight: bold;
+    transition: background-
+
+}
+
+
+/* 
+   FORMULÁRIO DE CADASTRO
+*/
+
+
+.container-cadastro {
+    max-width: 450px;
+    margin: 40px auto; 
+    background-color: rgba(0, 0, 0, 0.75); 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.titulo_form {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+.form-filme {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-filme label {
+    font-size: 14px;
+    color: #b3b3b3; 
+    margin-bottom: -5px; 
+}
+
+.form-filme input {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.form-filme input:focus {
+    background-color: #454545; 
+}
+
+.form-filme input[type="file"] {
+    padding: 10px 0;
+    background-color: transparent;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+.form-filme button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.form-filme button:hover {
+    background-color: #b20710;
+}
+
+
+.msg-sucesso {
+    background-color: #28a745; /* Verde para sucesso */
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.msg-sucesso a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
