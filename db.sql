@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS netflix;
+USE netflix;
+
+CREATE TABLE IF NOT EXISTS filmes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    diretor VARCHAR(100) NOT NULL,
+    genero VARCHAR(100) NOT NULL,
+    duracao TIME NOT NULL,
+    imagem VARCHAR(255) NOT NULL
+);

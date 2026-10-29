@@ -1,0 +1,24 @@
+name: Deploy Automático na VM
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Garantir permissão na pasta de uploads
+        run: |
+          mkdir -p uploads
+          chmod -R 777 uploads
+
+      - name: Atualizar aplicação no Docker
+        run: |
+          docker compose down
+          docker compose up -d --build
