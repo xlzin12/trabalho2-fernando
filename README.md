@@ -1,7 +1,7 @@
 # Trabalho 2 - Deploy Automático em VM (Catálogo de Filmes Netflix)
 
 ## Integrante
-* **Aluno:** Thiago Jose da Silva Braz
+* **Aluno:** Thiago Jose da Silva Braz, Gabriel Priori de Morais
 
 ---
 
