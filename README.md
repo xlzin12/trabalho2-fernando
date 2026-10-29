@@ -30,3 +30,4 @@ Com a Máquina Virtual ligada e conectada à rede (Modo Bridge) e os containers 
 * **Comandos para subir manualmente (caso necessário):**
   ```bash
   docker compose up -d --build# trabalho2-fernando
+# trabalho2-fernando
